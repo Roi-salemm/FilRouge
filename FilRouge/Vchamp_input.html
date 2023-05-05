@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <form action="destination.php" method="post">
+        <form action="destination.php" method="POST">
             <fieldset>
                 <p>Ces champs sont obligatoires *</p>
                 <legend>Vos Coordonées</legend>
@@ -19,10 +19,15 @@
                 <label for="prenom">Prenom* : </label>
                 <input type="text" name="prenom" id="prenom" required />
                 <br />
-
                 <p>
                     Genre* :
-                    <input type="radio" name="genre" id="femme" required />
+                    <input
+                        type="radio"
+                        name="genre"
+                        id="femme"
+                        checked
+                        required
+                    />
                     <label for="femme">Femme : </label>
 
                     <input type="radio" name="genre" id="homme" required />
@@ -32,7 +37,12 @@
                 <input type="date" name="date" id="date" />
                 <br />
                 <label for="code_postal">Code postal* : </label>
-                <input type="text" name="code_postal" id="code_postal" />
+                <input
+                    type="text"
+                    name="code_postal"
+                    id="code_postal"
+                    requierd
+                />
                 <br />
                 <label for="adresse">Adresse : </label>
                 <input type="text" name="adresse" id="adresse" />
@@ -46,12 +56,14 @@
                     name="e-mail"
                     id="e-mail"
                     placeholder="duck@yello.com"
+                    requierd
                 />
             </fieldset>
             <fieldset>
                 <legend>Vos demandes</legend>
                 <label for="sujet">Sujet *</label>
-                <select name="liste" id="liste">
+                <select name="liste" id="liste" required>
+                    <option value="web">Veuillez séléctionner un sujet</option>
                     <option value="web">Mes commandes</option>
                     <option value="web">Question sur un produit</option>
                     <option value="web">Réclamation</option>
