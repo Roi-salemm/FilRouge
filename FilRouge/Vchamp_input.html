@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="Vchamp.css" />
+    </head>
+
+    <body>
+        <form action="destination.php" method="post">
+            <fieldset>
+                <p>Ces champs sont obligatoires *</p>
+                <legend>Vos Coordonées</legend>
+                <label for="nom">Nom* : </label>
+                <input type="text" name="nom" id="nom" required />
+                <br />
+                <label for="prenom">Prenom* : </label>
+                <input type="text" name="prenom" id="prenom" required />
+                <br />
+
+                <p>
+                    Genre* :
+                    <input type="radio" name="genre" id="femme" required />
+                    <label for="femme">Femme : </label>
+
+                    <input type="radio" name="genre" id="homme" required />
+                    <label for="homme">Homme : </label>
+                </p>
+                <label for="date">Date de naissance* : </label>
+                <input type="date" name="date" id="date" />
+                <br />
+                <label for="code_postal">Code postal* : </label>
+                <input type="text" name="code_postal" id="code_postal" />
+                <br />
+                <label for="adresse">Adresse : </label>
+                <input type="text" name="adresse" id="adresse" />
+                <br />
+                <label for="ville">Ville : </label>
+                <input type="text" name="adresse" id="adresse" />
+                <br />
+                <label for="e-mail">E-mail* : </label>
+                <input
+                    type="text"
+                    name="e-mail"
+                    id="e-mail"
+                    placeholder="duck@yello.com"
+                />
+            </fieldset>
+            <fieldset>
+                <legend>Vos demandes</legend>
+                <label for="sujet">Sujet *</label>
+                <select name="liste" id="liste">
+                    <option value="web">Mes commandes</option>
+                    <option value="web">Question sur un produit</option>
+                    <option value="web">Réclamation</option>
+                    <option value="web">Autres</option>
+                </select>
+                <br />
+                <label for="Votre_question*">Votre Question* : </label>
+                <textarea
+                    name="question"
+                    id="question"
+                    cols="30"
+                    rows="3"
+                ></textarea>
+                <br />
+                <button type="submit">Envoyer</button>
+                <button type="reset">Anuler</button>
+            </fieldset>
+            <br />
+            <input
+                type="checkbox"
+                name="condition_general"
+                id="condition_general"
+            />
+            *J'accepet
+        </form>
+    </body>
+</html>
