@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+    text-decoration: none;
+}
+
+/* Pour les natives */
+body{
+    background-color: #222222;
+}
+
+label{
+    padding: 15px;
+    font-size: larger;
+}
+
+input{
+    background-color: #f7f7f7;
+    width: 160px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+button{
+    font-size: larger;
+    padding: 10px 10px 10px 10px;
+    margin: 15px 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+/* Pour les champs input (mes informations)*/
+.champ{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 7%;
+    color: white;
+}
+
+.champ__block{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 10px 10px 0px 10px;
+}
+
+.champ__infos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.champ__troisBlock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.champ__troisBlock__madame{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+
+.champ__troisBlock__monsieur{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.champ__troisBlock__age{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.input__radio{
+    width: 40px;
+    margin: 45px 0px 0px 45px;
+}
+
+.droit__button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 10px 0px 0px;
+
+}
+
+.champ_3__button{
+    padding: 160px 0px 0px 40px;
+}
+
+/* grand chef */
+
+.droit__chef{
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid white;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+}
+
+.droit__button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 10px 45px 0px;
+    margin: 45px 0px 0px 0px;
+    
+}
+
+button:hover{
+    box-shadow:5px 5px 5px #282828;
+    background-color: #ffffff;
+}
+
+/* bandereau menu */
+
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 140px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.666);
+    color: white;
+}
+
+.banner__logo{
+    width: 140px;
+    height: 140px;
+    margin: 0px 0px 0px 20px;
+}
+
+.banner__client{
+    text-align: center;
+    padding: 60px;
+}
+
+.banner__button{
+    margin: 50px;
+}
+
+
+
+
+

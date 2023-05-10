@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- 
+
+    Mediatheque 1.2
+    MAI 23
+
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Compte Client</title>
+        <link rel="stylesheet" href="input.css" />
+    </head>
+    <body>
+        <head>
+            <nav>
+                <div class="banner">
+                    <a href="#"
+                        ><img
+                            class="banner__logo"
+                            href="Fichier_2.svg"
+                            src="ressources/Fichier_2.svg"
+                    /></a>
+                    <div class="banner__client">Num client #457345</div>
+                    <div><button class="banner__button">CONNEXION</button></div>
+                </div>
+            </nav>
+        </head>
+        <section class="champ">
+            <from action="php" method="POST">
+                <div class="champ__block">
+                    <div class="champ__infos">
+                        <h2>Mes Informaitons</h2>
+                    </div>
+                    <div class="champ__radio">
+                        <input
+                            class="input__radio"
+                            type="radio"
+                            name="madame"
+                            id="madame"
+                            required
+                        />
+                        <label for="madame">Madame </label>
+                        <input
+                            class="input__radio"
+                            type="radio"
+                            name="monsieur"
+                            id="monsieur"
+                            required
+                        />
+                        <label for="monsieur">Monsieur </label>
+                    </div>
+                    <div class="champ__troisBlock">
+                        <div class="champ__troisBlock__madame">
+                            <label for="prenom">Prenom </label>
+                            <input
+                                type="text"
+                                name="prenom"
+                                id="prenom"
+                                required
+                            />
+                            <label for="telephone">Téléphone </label>
+                            <input
+                                type="text"
+                                name="telephone"
+                                id="telephone"
+                                required
+                            />
+                            <label for="adresse">Adresse</label>
+                            <input type="text" name="adresse" id="adresse" />
+                            <label for="code_postal">Code postal</label>
+                            <input
+                                type="text"
+                                name="code_postal"
+                                id="code_postal"
+                            />
+                        </div>
+                        <div class="champ__troisBlock__monsieur">
+                            <label for="nom">Nom </label>
+                            <input type="text" name="nom" id="nom" required />
+                            <label for="e-mail">E-mail</label>
+                            <input
+                                type="text"
+                                name="e-mail"
+                                id="e-mail"
+                                required
+                            />
+                            <label for="complement_adresse"
+                                >Complement d'adresse</label
+                            >
+                            <input
+                                type="text"
+                                name="complement_adresse"
+                                id="complement_adresse"
+                                required
+                            />
+                            <label for="ville">Ville </label>
+                            <input type="text" name="adresse" id="adresse" />
+                        </div>
+                        <div class="champ__troisBlock__age">
+                            <label for="date">Date de naissance* </label>
+                            <input type="date" name="date" id="date" />
+                            <div class="champ_3__button">
+                                <button>MODIFIER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </from>
+            <div class="droit__chef">
+                <h2>Bonjour, Grand chef</h2>
+
+                <div class="droit__button">
+                    <button>GESTIONS DES EMPRUNTS</button>
+                    <button>GESTION DU STOCK</button>
+                    <button>GESTION DES ABONNÉES</button>
+                    <button>INSCRIPTION CLIENTS</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
